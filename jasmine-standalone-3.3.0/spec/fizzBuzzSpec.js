@@ -6,6 +6,6 @@ describe("Fizzbuzz", function() {
   });
 
 it("should check num is divisible by 3", function() {
-  expect(fizzbuzz.divisibleByThree(3)).toBe(true);
+  expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);
 });
 });
