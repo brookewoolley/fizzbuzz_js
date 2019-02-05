@@ -15,3 +15,22 @@ Fizzbuzz.prototype.isDivisibleByFive = function(num) {
 Fizzbuzz.prototype.isDivisibleByFifteen = function(num) {
   return this._isDivisibleBy(num, 15);
 }
+
+Fizzbuzz.prototype.says = function(num) {
+  if (this.isDivisibleByFifteen(num)) {
+    return "FizzBuzz"
+  }
+
+  else if (this.isDivisibleByThree(num)) {
+    return "Fizz";
+  }
+
+  else if (this.isDivisibleByFive(num)) {
+    return "Buzz";
+  }
+
+  else {
+    return num;
+  }
+
+};
